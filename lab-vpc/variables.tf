@@ -50,3 +50,7 @@ variable "private_az_a" {
 variable "private_az_b" {
   default = "us-east-1b"
 }
+
+variable "ep_service_name" {
+  default = "com.amazonaws.us-east-1.s3"
+}
