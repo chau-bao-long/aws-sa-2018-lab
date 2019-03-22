@@ -19,6 +19,7 @@ resource "aws_instance" "web_instance" {
   vpc_security_group_ids = [
     "${aws_security_group.sg_web.id}"
   ]
+  iam_instance_profile = "${aws_iam_instance_profile.s3_profile.name}"
   tags = {
     Name = "lab-architect-web-front"
   }
